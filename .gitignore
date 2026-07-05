@@ -10,11 +10,10 @@ user_data/
 data/
 logs/
 *.log
-.hyperopt/
-*.sqlite
-*.db
+.backtest/
 freqtrade.sqlite
 tradesv3.sqlite
+*.db
 
 # IDE
 .vscode/
