@@ -79,6 +79,6 @@
     "internals": {
         "process_throttle_secs": 5
     },
-    "strategy": "DoubleMAZhonghuadan",
+    "strategy": "DoubleMAZhonghuadanV3",
     "strategy_path": "strategy"
 }
