@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.venv/
+
+# Freqtrade
+user_data/
+data/
+logs/
+*.log
+.hyperopt/
+*.sqlite
+*.db
+freqtrade.sqlite
+tradesv3.sqlite
+
+# IDE
+.vscode/
+.idea/
+
+# Config (keep template)
+config/config.live.json
+config/local.json
+
+# OS
+.DS_Store
+Thumbs.db
