@@ -5,27 +5,33 @@ __pycache__/
 dist/
 .venv/
 
-# Freqtrade
-user_data/
-data/
-logs/
-*.log
-.backtest/
-freqtrade.sqlite
-tradesv3.sqlite
+# Freqtrade - keep configs, ignore data/logs/backtest results
+user_data/backtest_results/
+user_data/data/
+user_data/logs/
+user_data/plot/
+user_data/notebooks/
+user_data/hyperopt_results/
+user_data/freqaimodels/
+user_data/strategies/sample_strategy.py
+
+# Database files
 *.db
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Config (keep running configs, ignore local overrides)
+config/local.json
 
 # IDE
 .vscode/
 .idea/
 
-# Config (keep template)
-config/config.live.json
-config/local.json
-
 # OS
 .DS_Store
 Thumbs.db
-*.sqlite
-*.sqlite-shm
-*.sqlite-wal
+
+# Data
+data/
+database/
