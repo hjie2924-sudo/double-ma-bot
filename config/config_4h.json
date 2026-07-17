@@ -6,12 +6,11 @@
     "fiat_display_currency": "USD",
     "dry_run": true,
     "dry_run_wallet": 50,
-    "db_url": "sqlite:///tradesv3.zhonghuadan.dryrun.sqlite",
     "cancel_open_orders_on_exit": true,
     "trading_mode": "futures",
     "margin_mode": "isolated",
-    "leverage": 90.0,
-    "position_adjustment_enable": true,
+    "leverage": 18.0,
+    "position_adjustment_enable": false,
     "unfilledtimeout": {
         "entry": 10,
         "exit": 10,
@@ -40,26 +39,16 @@
         "password": "",
         "ccxt_config": {
             "enableRateLimit": true,
-            "rateLimit": 100,
-            "proxies": {
-                "http": "http://127.0.0.1:7897",
-                "https": "http://127.0.0.1:7897"
-            }
+            "rateLimit": 100
         },
         "ccxt_async_config": {
             "enableRateLimit": true,
-            "rateLimit": 100,
-            "proxies": {
-                "http": "http://127.0.0.1:7897",
-                "https": "http://127.0.0.1:7897"
-            }
+            "rateLimit": 100
         },
         "pair_whitelist": [
             "BTC/USDT:USDT",
             "ETH/USDT:USDT",
-            "SOL/USDT:USDT",
-            "BNB/USDT:USDT",
-            "XRP/USDT:USDT"
+            "SOL/USDT:USDT"
         ],
         "pair_blacklist": [],
         "outdated_offset": 5,
@@ -70,23 +59,28 @@
             "method": "StaticPairList"
         }
     ],
+    "telegram": {
+        "enabled": false,
+        "token": "",
+        "chat_id": ""
+    },
     "api_server": {
         "enabled": true,
         "listen_ip_address": "127.0.0.1",
-        "listen_port": 8083,
-        "verbosity": "info",
+        "listen_port": 8081,
+        "verbosity": "error",
         "enable_openapi": false,
-        "jwt_secret_key": "zhonghuadan-secret-key-32chars!!!",
+        "jwt_secret_key": "double-ma-bot-4h-secret-change-me",
         "CORS_origins": [],
         "username": "admin",
         "password": "admin"
     },
-    "bot_name": "激进双均线滚仓V3-15m-BTC/ETH/SOL",
+    "bot_name": "double-ma-bot-4h",
     "initial_state": "running",
     "force_entry_enable": true,
     "internals": {
         "process_throttle_secs": 5
     },
-    "strategy": "JijinGuncangV3",
+    "strategy": "DoubleMAZhonghuadanV4_4H",
     "strategy_path": "strategy"
 }
